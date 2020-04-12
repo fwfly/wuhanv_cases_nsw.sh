@@ -6,7 +6,7 @@ todaymd=$2
 filetoday=`date -v -1d +%m-%d`
 
 localtion_file="nsw_location_cases-$filetoday.csv"
-source_linked_file="nsw_location_cases-$filetoday.csv"
+source_linked_file="nsw_source_linked_cases-$filetoday.csv"
 
 if [ ! -f "nsw_location_cases-$filetoday.csv" ];
 then
