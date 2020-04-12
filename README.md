@@ -5,7 +5,7 @@ Usage
   wuhanv_cases_nsw.sh <postcode> <date>
   Ex: 
     - wuhanv_cases_nsw.sh 2000        # Check today's new cases
-    - wuhanv_cases_nsw.sh 2000 08-04  # Check new cases on April 8th
+    - wuhanv_cases_nsw.sh 2000 04-08  # Check new cases on April 8th
 ```
 
 Result
