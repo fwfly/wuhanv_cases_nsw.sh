@@ -30,11 +30,10 @@ else
 fi
 
 echo $todaymd
-new_case=`grep -inr $todaydm $source_linked_file | wc -l`  # format dd-mm
+new_case=`grep -inr $todaymd $localtion_file | wc -l`
 new_postcode_case=`grep -inr $todaymd $localtion_file | grep $postcode | wc -l` # format mm-dd
 case_num=`grep -inr $postcode $localtion_file | wc -l`
 
 echo "New NSW cases: $new_case"
 echo "New $postcode Cases : $new_postcode_case"
 echo "Cases in $postcode: $case_num"
-
