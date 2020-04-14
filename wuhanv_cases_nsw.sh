@@ -3,6 +3,12 @@
 postcode=$1
 todaymd=$2
 
+if [ -z "$postcode" ];then
+  echo "Error : No postcode, please enter postcode like below cmd"
+  echo "  - ./wuhanv_cases_nsw.sh 2000"
+  exit 1
+fi
+
 filetoday=`date -v -1d +%m-%d`
 
 localtion_file="nsw_location_cases-$filetoday.csv"
