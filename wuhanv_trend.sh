@@ -1,11 +1,11 @@
 #!/bin/bash
 
-if [ -z "$1" ];then
-    dates=`awk -F ',' '{print $1}' nsw_location_cases*  | grep 2020 | uniq`
-else
-    dates=`grep $1 nsw_location_cases* | awk -F ',' '{print $1}' | grep 2020 | uniq`
-fi
 
+if [ -z "$1" ];then
+    dates=`awk -F ',' '{print $1}' nsw_location_cases*  | grep '2020\|2021' | uniq`
+else
+    dates=`grep $1 nsw_location_cases* | awk -F ',' '{print $1}' | grep '2020\|2021' | uniq`
+fi 
 
 for day in $dates
 do
